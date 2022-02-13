@@ -1,0 +1,376 @@
+:root {
+  --z-sky: 7;
+  --z-highest: 6;
+  --z-high: 5;
+  --z-medium: 3;
+  --z-low: 2;
+  --z-lowest: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid aquamarine;
+  outline-offset: -1px; */
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  /* overflow: hidden; */
+}
+
+body {
+  position: relative;
+  background-color: #F8F8F8;
+}
+
+#header {
+  z-index: var(--z-highest);
+  background-color: #F8F8F8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Noto Serif', serif;
+}
+
+a, div {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#menuToggle {
+  position: relative;
+  z-index: var(--z-highest);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: var(--z-sky);
+  -webkit-touch-callout: none;
+}
+
+/* hamburger */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 2px;
+  margin-bottom: 7px;
+  position: relative;
+  background: black;
+  border-radius: 3px;
+  z-index: var(--z-highest);
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+  z-index: var(--z-highest);
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+  z-index: var(--z-highest);
+}
+
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(6px, -1px);
+  background: #232323;
+  z-index: var(--z-highest);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, 8px);
+  z-index: var(--z-highest);
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+  z-index: var(--z-highest);
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-high);
+  position: absolute;
+  top: -20px;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  padding-top: 125px;
+  right: -20px;
+  background: #F8F8F8;
+  /* opacity: 0; */
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  /* transition: opacity 0.5s; */
+}
+
+#menu li {
+  width: 80vw;
+  padding: 20px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+#menuToggle input:checked~ul {
+  transform: none;
+}
+
+.onclick-menu:focus {
+  pointer-events: none;
+}
+
+.onclick-menu:focus .onclick-menu-content {
+  opacity: 1;
+  visibility: visible;
+  display: inherit;
+  pointer-events: auto;
+}
+
+.onclick-menu-content {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s;
+}
+
+.onclick-menu-content li {
+  list-style: none;
+}
+
+
+.wall {
+  position: fixed;
+  top: 0;
+  z-index: var(--z-sky);
+  background-color: #F8F8F8;
+  opacity: .9;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wall-text {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 21px;
+}
+
+.wall-img {
+  margin-top: 20px;
+}
+
+.wall-button {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  margin-top: 80px;
+}
+
+
+.scegli {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 110px;
+}
+
+.scegli p {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.98px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.swiper {
+  display:block;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 60vh;
+  padding: 0 24px !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  border: solid 2pt black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.narrazionevax {
+  background: #F5ECFF;
+}
+
+.narrazionevax .num {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #964CE5;
+}
+
+.narrazionevax .titolo {
+  width: 90%;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.98px;
+  color: #964CE5;
+}
+
+.narrazionevax .gioca {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 40px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: #e7d4fb;
+  color: #964CE5;
+  border: 2px solid #964CE5;
+}
+
+
+.immigrazione {
+  background: #FFDFD1;
+}
+
+.immigrazione .num {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FF6122;
+}
+
+.immigrazione .titolo {
+  width: 90%;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.98px;
+  color: #FF6122;
+}
+
+.immigrazione .gioca {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 40px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: #FFCCB7;
+  color: #FF6122;
+  border: 2px solid #FF6122;
+}
+
+
+.climate-change {
+  background: #E7FFDC;
+}
+
+.climate-change .num {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #70BA4D;
+}
+
+.climate-change .titolo {
+  width: 90%;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.98px;
+  color: #70BA4D;
+}
+
+.climate-change .gioca {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 40px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: #D5F5C7;
+  color: #70BA4D;
+  border: 2px solid #70BA4D;
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 80vw !important;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .swiper-pagination {
+display:block;
+} */
+/*
+.swiper-pagination-bullet {
+  background-color: rgb(255, 255, 255) !important;
+  transition: width 0.3s ease-out;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  width: 15px !important;
+  border-radius: 16px !important;
+  transition: width 0.3s ease-out;
+  opacity: 1 !important;
+} */
