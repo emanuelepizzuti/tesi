@@ -1,0 +1,235 @@
+:root {
+  --z-sky: 7;
+  --z-highest: 6;
+  --z-high: 5;
+  --z-medium: 3;
+  --z-low: 2;
+  --z-lowest: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid aquamarine; */
+  /* outline-offset: -1px; */
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background-color: #F8F8F8;
+}
+
+#header {
+  z-index: var(--z-highest);
+  background-color: #F8F8F8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Noto Serif', serif;
+}
+
+a, div {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#menuToggle {
+  position: relative;
+  z-index: var(--z-highest);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: var(--z-sky);
+  -webkit-touch-callout: none;
+}
+
+/* hamburger */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 2px;
+  margin-bottom: 7px;
+  position: relative;
+  background: black;
+  border-radius: 3px;
+  z-index: var(--z-highest);
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+  z-index: var(--z-highest);
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+  z-index: var(--z-highest);
+}
+
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(6px, -1px);
+  background: #232323;
+  z-index: var(--z-highest);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, 8px);
+  z-index: var(--z-highest);
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+  z-index: var(--z-highest);
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-high);
+  position: absolute;
+  top: -20px;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  padding-top: 125px;
+  right: -20px;
+  background: #F8F8F8;
+  /* opacity: 0; */
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  /* transition: opacity 0.5s; */
+}
+
+#menu li {
+  width: 80vw;
+  padding: 20px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+#menuToggle input:checked~ul {
+  transform: none;
+}
+
+.onclick-menu:focus {
+  pointer-events: none;
+}
+
+.onclick-menu:focus .onclick-menu-content {
+  opacity: 1;
+  visibility: visible;
+  display: inherit;
+  pointer-events: auto;
+}
+
+.onclick-menu-content {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s;
+}
+
+.onclick-menu-content li {
+  list-style: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-family: 'Noto Serif', serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.scrolldown {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  bottom: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  color: #b5b5b5
+}
+
+#text3 {
+  display: flex;
+  align-items: center;
+}
+
+.start {
+  position: absolute;
+  /* top: 200px; */
+  bottom: 20px;
+  padding: 10px 42px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  background-color: #F8F8F8;
+  color: black;
+  border: 2px solid black;
+}
+
+.start:active {
+  background-color: #blue;
+}
+
+section {
+  outline: 2px solid red;
+}
+
+.fixed-position {
+  overflow: hidden;
+}
