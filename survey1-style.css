@@ -5,6 +5,7 @@
   --z-medium: 3;
   --z-low: 2;
   --z-lowest: 1;
+  /* --swiper-navigation-size: 0px !important; */
 }
 
 * {
@@ -23,6 +24,8 @@ html {
 body {
   position: relative;
   background-color: #F5ECFF;
+  /* outline: 2px solid red; */
+  /* height: 100vh; */
 }
 
 #header {
@@ -72,7 +75,6 @@ a:hover {
   -webkit-touch-callout: none;
 }
 
-/* hamburger */
 #menuToggle span {
   display: block;
   width: 33px;
@@ -183,10 +185,42 @@ a:hover {
   list-style: none;
 }
 
+.swiper {
+  /* outline: 2px solid red; */
+  width: 100%;
+  height: 90vh;
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  /* font-size: 18px; */
+  /* background: #fff; */
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; */
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
 .question-container {
   margin-top: 20px;
   /* outline: solid 1px blueviolet; */
-  outline-offset: -1px;
+  /* outline-offset: -1px; */
   position: relative;
   width: 100vw;
   padding: 0 20px 0 20px;
@@ -204,28 +238,33 @@ a:hover {
   color: #964CE5;
 }
 
-.bottom {
-  position: fixed;
-  bottom: 20px;
+.interaction {
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  bottom: 100px;
   width: 120vw;
   left: -10vw;
-  /* outline: solid 5px yellowgreen; */
-  outline-offset: -5px;
+  /* outline: solid 1px cornflowerblue; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .domanda-risposta {
-  outline: 1px solid aquamarine;
-  outline-offset: -1px;
+  /* outline: solid 1px blueviolet; */
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #964CE5;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px 40px 0px;
 }
 
 .container {
+  /* outline: solid 1px red; */
+  /* outline-offset: 4px; */
   /* Content is centered horizontally */
   display: flex;
   align-items: center;
@@ -246,7 +285,7 @@ a:hover {
   height: 36px;
   width: 36px;
   /* Rounded border */
-  border-radius: 9999px;
+  border-radius: 18px;
   /* Colors */
   background-color: #F5ECFF;
   outline: 2px solid #964CE5;
@@ -262,14 +301,15 @@ a:hover {
 }
 
 .bottom-navigation {
-  margin-top: 10px;
-  width: 100vw;
-  /* position: relative;
-  left: -10px; */
+  /* outline: solid 1px cadetblue; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  height: 40px;
+  bottom: 20px;
+  width: 100vw;
 }
 
 .noncliccabile {
@@ -277,51 +317,56 @@ a:hover {
   pointer-events: none;
 }
 
-.avanti {
-  width: 100px;
-  padding: 10px 20px;
+.swiper-button-next {
+  /* outline: solid 1px cadetblue; */
+  /* position: relative !important;
+  right: 0 !important; */
+  width: 100px !important;
+  height: 40px;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 16px;
   background-color: rgba(150, 76, 229, 0.15);
-  color: #964CE5;
+  color: #964CE5 !important;
   border: 2px solid #964CE5;
   border-right: 0;
   border-radius: 25px 0 0 25px;
-  text-align: left;
-
+  right: 0 !important;
 }
 
-.avanti:hover{
+.swiper-button-next::after{
+  content: '' !important;
+}
+
+.swiper-button-prev {
+  /* outline: solid 1px cadetblue; */
+  width: 100px !important;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #964CE5 !important;
+  border: 0;
+  border-radius: 25px;
+  left: 0 !important;
+}
+.swiper-button-prev::after{
+  content: '' !important;
+}
+/* .avanti:hover {
   cursor: pointer;
   background-color: rgba(150, 76, 229, 0.3);
 }
 
-.avanti:active{
+.avanti:active {
   cursor: pointer;
   background-color: rgba(150, 76, 229, 0.5);
-}
-
-.indietro {
-  width: 100px;
-  padding: 10px 20px;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #964CE5;
-  /* border: 2px solid #964CE5; */
-  border-radius: 25px;
-  text-align: right;
-
-
-}
-
-.indietro:hover{
+} */
+/* .indietro:hover {
   cursor: pointer;
   color: rgba(150, 76, 229, 0.3);
 }
 
-.indietro:active{
+.indietro:active {
   cursor: pointer;
   color: rgba(150, 76, 229, 0.5);
-}
+} */
