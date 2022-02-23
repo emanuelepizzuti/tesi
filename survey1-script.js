@@ -150,7 +150,19 @@ $(() => {
   };
 
 
-  $('#knob').on('touchstart', touchDownHandler)
+  $('#knob').on('touchstart', touchDownHandler);
+
+
+// Initialize Swiper
+
+    var swiper = new Swiper(".mySwiper", {
+      noSwiping: true,
+      noSwipingClass: "swiper-slide",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
 
 
 });
