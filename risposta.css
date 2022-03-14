@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid aquamarine; */
+  /* outline-offset: -1px; */
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+#header {
+  background-color: var(--bg-orange) !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  outline: 2px solid red;
+  outline-offset: -4px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: aliceblue;
+
+  overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#risposta-quattro {
+  /* height: 400%; */
+
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="survey1-style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <style></style>
+</head>
+
+<body>
+  <header id="header">
+    <svg class="logo" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="13" cy="13" r="13" fill="url(#paint0_linear_619_1288)" />
+			<defs>
+				<linearGradient id="paint0_linear_619_1288" x1="13" y1="0" x2="13" y2="26" gradientUnits="userSpaceOnUse">
+					<stop stop-opacity="0" />
+					<stop offset="1" />
+				</linearGradient>
+			</defs>
+		</svg>
+    <nav role='navigation'>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>Survey</li>
+          </a>
+          <!-- <a href="#">
+						<li>Info</li>
+					</a>
+					<a href="#">
+						<li>Contact</li>
+					</a>
+					<a href="" target="_blank">
+						<li>Show me more</li>
+					</a> -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- DOMANDA 1 -->
+      <div class="swiper-slide">
+        <div class="question-container">
+          <div class="spacer-header"></div>
+          <p class="numero">Domanda 1</p>
+          <h1 class="question">“L'immigrazione è un problema economico per l'Italia.”</h1>
+        </div>
+
+        <div class="interaction">
+          <div id="domanda-risposta1">Quanto sei d'accordo<br>con questa frase?</div>
+          <!-- <div style="display: flex; justify-content: center; padding: 4rem"> -->
+          <div style="width: 16rem" class="container">
+            <div class="left"></div>
+            <div class="knob" id="knob"></div>
+            <div class="right"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOMANDA 2 -->
+      <div class="swiper-slide">
+        <div class="question-container">
+          <div class="spacer-header"></div>
+          <p class="numero">Domanda 2</p>
+          <h1 class="question">“Quante persone immigrate conosci?”</h1>
+        </div>
+
+        <div class="interaction">
+          <div id="domanda-risposta2">?</div>
+          <!-- <div style="display: flex; justify-content: center; padding: 4rem"> -->
+          <div style="width: 16rem" class="container">
+            <div class="left"></div>
+            <div class="knob" id="knob2"></div>
+            <div class="right"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOMANDA 3 -->
+      <div class="swiper-slide">
+        <div class="question-container">
+          <div class="spacer-header"></div>
+          <p class="numero">Domanda 3</p>
+          <img class="question" src="img/immigrazione.png" alt="">
+          <!-- <h1 class="question">“L'immigrazione è un problema economico per l'Italia.”</h1> -->
+        </div>
+
+        <div class="interaction">
+          <div id="domanda-risposta3">Questa notizia è fuorviante?</div>
+          <!-- <div style="display: flex; justify-content: center; padding: 4rem"> -->
+          <div style="width: 16rem" class="container">
+            <div class="left"></div>
+            <div class="knob" id="knob3"></div>
+            <div class="right"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOMANDA 4 -->
+      <div class="swiper-slide">
+        <div class="question-container">
+          <div class="spacer-header"></div>
+          <p class="numero">Domanda 4</p>
+          <h1 class="question">Qual è la percentuale di persone immigrate (che vivono) in Italia?</h1>
+        </div>
+
+        <div class="interaction">
+          <div id="domanda-risposta4">?</div>
+          <!-- <div style="display: flex; justify-content: center; padding: 4rem"> -->
+          <div style="width: 16rem" class="container">
+            <div class="left"></div>
+            <div class="knob" id="knob4"></div>
+            <div class="right"></div>
+          </div>
+        </div>
+        <div class="bottonefinalone">
+          Calcola risultatone
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bottom-navigation noncliccabile">
+      <button class="indietro swiper-button-prev">Indietro</button>
+      <button class="avanti swiper-button-next">Avanti</button>
+    </div>
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="module" src="survey1-script.js" charset="utf-8"></script>
+
+</body>
