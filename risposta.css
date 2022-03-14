@@ -30,13 +30,18 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: aliceblue;
-
+  background: var(--bg-orange);
   overflow: auto;
-    -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 20px;
+
+  padding: 20px;
 }
 
-#risposta-quattro {
-  /* height: 400%; */
-
+.risp1 {
+  outline: 2pt solid;
 }
