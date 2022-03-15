@@ -66,8 +66,8 @@ body {
 }
 
 .scrolldown {
-  /* position: absolute; */
-  position: sticky;
+  position: absolute;
+  /* position: sticky; */
   width: 100%;
   text-align: center;
   padding: 10px;
