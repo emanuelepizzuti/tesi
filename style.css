@@ -66,11 +66,13 @@ body {
 }
 
 .scrolldown {
-  position: absolute;
+  /* position: absolute; */
+  position: sticky;
   width: 100%;
   text-align: center;
   padding: 10px;
-  bottom: 20px;
+  /* bottom: 20px; */
+  bottom: calc(1rem + env(safe-area-inset-bottom));
   font-family: 'Space Grotesk', sans-serif;
   font-size: 21px;
   color: #b5b5b5
