@@ -49,18 +49,23 @@ $(() => {
 
     if (newLeftWidth >= 0 & newLeftWidth < 20) {
       $("#domanda-risposta1").html("Molto in disaccordo");
+      $("#knob").css('background-color', 'red');
       answ1 = "1";
     } else if (newLeftWidth >= 20 & newLeftWidth < 40) {
       $("#domanda-risposta1").html("Abbastanza in disaccordo");
+      $("#knob").css('background-color', 'blue');
       answ1 = "2";
     } else if (newLeftWidth >= 40 & newLeftWidth < 60) {
       $("#domanda-risposta1").html("Né d'accordo né in disaccordo");
+      $("#knob").css('background-color', 'white');
       answ1 = "3";
     } else if (newLeftWidth >= 60 & newLeftWidth < 80) {
       $("#domanda-risposta1").html("Sono abbastanza d'accordo");
+      $("#knob").css('background-color', 'black');
       answ1 = "4";
     } else if (newLeftWidth >= 80 & newLeftWidth <= 100) {
       $("#domanda-risposta1").html("Sono molto d'accordo");
+      $("#knob").css('background-color', 'purple');
       answ1 = "5";
     }
 
