@@ -14,7 +14,7 @@
 
 * {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   box-sizing: border-box;
   /* outline: 1px solid aquamarine; */
   /* outline-offset: -1px; */
@@ -30,6 +30,11 @@ body {
   background-color: var(--bg-orange);
   /* outline: 2px solid red; */
   /* height: 100vh; */
+  padding:
+    env(safe-area-inset-top, 20px)
+    env(safe-area-inset-right, 20px)
+    env(safe-area-inset-bottom, 20px)
+    env(safe-area-inset-left, 20px);
 }
 
 #header {
@@ -220,6 +225,8 @@ body {
   height: 40px;
   bottom: 40px;
   width: 100vw;
+
+  padding: 1em 1em calc(1em + env(safe-area-inset-bottom));
 }
 
 .noncliccabile {
