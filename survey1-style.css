@@ -203,7 +203,7 @@ body {
   border-radius: 999px;
   /* Colors */
   background-color: var(--bg-orange);
-  outline: 1px solid var(--orange);
+  border: 1px solid var(--orange);
   cursor: pointer;
 }
 
