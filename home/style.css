@@ -17,8 +17,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid aquamarine; */
-  /* outline-offset: -1px; */
 }
 
 html {
@@ -27,8 +25,6 @@ html {
 
 body {
   background-color: var(--bg);
-
-
 }
 
 .logo {
@@ -37,17 +33,12 @@ body {
 
 .container {
   padding: 20px;
-  outline: 1px solid red;
-  outline-offset: -5px;
 }
 
 .title {
   font-family: 'Noto Serif', serif;
   font-size: 26px;
-  /* margin-bottom: 20px; */
   text-align: center;
-  /* outline: 1px solid aquamarine; */
-  /* outline-offset: -1px; */
 }
 
 .paragraph {
@@ -55,8 +46,6 @@ body {
   font-size: 18px;
   line-height: 140%;
   margin-bottom: 20px;
-  /* outline: 1px solid aquamarine; */
-  /* outline-offset: -1px; */
 }
 
 .text {
@@ -67,32 +56,32 @@ body {
   width: 100%;
   scroll-snap-align: start;
   position: relative;
-
-  outline: 1px solid red;
-  outline-offset: -5px;
-
   padding:
-    env(safe-area-inset-top, 20px)
-    env(safe-area-inset-right, 20px)
-    env(safe-area-inset-bottom, 20px)
-    env(safe-area-inset-left, 20px);
+    env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
 }
 
-.scrolldown {
-  /* position: absolute; */
-  /* position: sticky; */
-  width: 100%;
-  text-align: center;
-  /* padding: 10px; */
-  /* bottom: 20px; */
+footer {
+  flex: none;
+  display: flex;
+  gap: 1em;
+  justify-content: space-evenly;
   padding: 1em 1em calc(1em + env(safe-area-inset-bottom));
   /* adds the safe-area-inset-bottom value to the initial 1em of padding.
   a larger black area will display for a device that has a positive value for this variable. */
   position: sticky;
-  bottom: 0 ;
+  bottom: 0;
+}
+
+.scrolldown {
+  width: 100%;
+  text-align: center;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 21px;
+  font-size: 16px;
   color: #b5b5b5
+}
+
+.remove {
+  display: none;
 }
 
 #text4 {
@@ -101,9 +90,6 @@ body {
 }
 
 .start {
-  position: absolute;
-  /* top: 200px; */
-  bottom: 20px;
   padding: 10px 42px;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
@@ -111,13 +97,14 @@ body {
   background-color: var(--bg);
   color: black;
   border: 1px solid black;
+  text-align: center;
 }
 
 .start:active {
   background-color: #blue;
 }
 
-.start:hover{
+.start:hover {
   text-decoration: none;
   background: #e2e6dc;
 }
