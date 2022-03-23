@@ -1,3 +1,26 @@
+:root {
+  --z-sky: 7;
+  --z-highest: 6;
+  --z-high: 5;
+  --z-medium: 3;
+  --z-low: 2;
+  --z-lowest: 1;
+  --bg: #F4F6F0;
+  --bg-orange: #FFEDE6;
+  --orange: #EB4E1C;
+  --orange-transp: rgba(255, 97,  34, 0.15);
+  --orange-transp-active: rgba(255, 97, 34, 0.30);
+  --bg-purple: #F5ECFF;
+  --purple: #6F32B0;
+  --purple-transp: rgba(111, 50,  176, 0.15);
+  --purple-transp-active: rgba(111, 50,  176, 0.30);
+  --bg-green: #D7F4E5;
+  --green: #226204;
+  --green-transp: rgba(34, 98,  4, 0.15);
+  --green-transp-active: rgba(34, 98,  4, 0.30);
+  /* --swiper-navigation-size: 0px !important; */
+}
+
 * {
   margin: 0;
   padding: 0;
