@@ -27,6 +27,8 @@ html {
 
 body {
   background-color: var(--bg);
+
+
 }
 
 .logo {
@@ -35,6 +37,8 @@ body {
 
 .container {
   padding: 20px;
+  outline: 1px solid red;
+  outline-offset: -5px;
 }
 
 .title {
@@ -63,16 +67,29 @@ body {
   width: 100%;
   scroll-snap-align: start;
   position: relative;
+
+  outline: 1px solid red;
+  outline-offset: -5px;
+
+  padding:
+    env(safe-area-inset-top, 20px)
+    env(safe-area-inset-right, 20px)
+    env(safe-area-inset-bottom, 20px)
+    env(safe-area-inset-left, 20px);
 }
 
 .scrolldown {
-  position: absolute;
+  /* position: absolute; */
   /* position: sticky; */
   width: 100%;
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
   /* bottom: 20px; */
-  bottom: calc(1rem + env(safe-area-inset-bottom));
+  padding: 1em 1em calc(1em + env(safe-area-inset-bottom));
+  /* adds the safe-area-inset-bottom value to the initial 1em of padding.
+  a larger black area will display for a device that has a positive value for this variable. */
+  position: sticky;
+  bottom: 0 ;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 21px;
   color: #b5b5b5
