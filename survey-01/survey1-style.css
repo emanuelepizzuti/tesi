@@ -36,6 +36,9 @@ body {
     env(safe-area-inset-right, 20px)
     env(safe-area-inset-bottom, 20px)
     env(safe-area-inset-left, 20px);
+<<<<<<< HEAD
+>>>>>>> parent of a33a45b (qwerty)
+=======
 >>>>>>> parent of a33a45b (qwerty)
 }
 
@@ -54,6 +57,7 @@ body {
   width: 100%;
   height: 100vh;
 <<<<<<< HEAD
+<<<<<<< HEAD
   outline: 2px solid black;
   outline-offset: -70px;
 
@@ -61,6 +65,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+=======
+>>>>>>> parent of a33a45b (qwerty)
 =======
 >>>>>>> parent of a33a45b (qwerty)
 }
@@ -204,15 +210,21 @@ body {
   justify-content: space-between;
   height: 40px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 100vw;
 
   border: 1px solid var(--orange);
 
 =======
+=======
+>>>>>>> parent of a33a45b (qwerty)
   bottom: 40px;
   width: 100vw;
 
   padding: 1em 1em calc(1em + env(safe-area-inset-bottom));
+<<<<<<< HEAD
+>>>>>>> parent of a33a45b (qwerty)
+=======
 >>>>>>> parent of a33a45b (qwerty)
 }
 
