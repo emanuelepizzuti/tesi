@@ -103,7 +103,7 @@ body {
 
 .question {
   font-family: 'Noto Serif', serif;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 140%;
   max-width: 90vw;
   max-height: 350px;
@@ -126,7 +126,7 @@ body {
   /* outline: solid 1px blueviolet; */
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   color: var(--orange);
   display: flex;
   justify-content: center;
@@ -289,7 +289,7 @@ body {
   font-size: 16px;
   right: 0 !important;
   height: 40px;
-  bottom: 40px;
+  bottom: 100px;
   position: fixed;
   background-color: var(--orange);
   color: var(--bg);

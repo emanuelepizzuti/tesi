@@ -48,23 +48,23 @@ let answ4;
 
     if (newLeftWidth >= 0 & newLeftWidth < 20) {
       $("#domanda-risposta1").html("Molto in disaccordo");
-      $("#knob").css('background-color', 'red');
+      $(".knob").css('background-color', '#80a2ff');
       answ1 = "1";
     } else if (newLeftWidth >= 20 & newLeftWidth < 40) {
       $("#domanda-risposta1").html("Abbastanza in disaccordo");
-      $("#knob").css('background-color', 'blue');
+      $(".knob").css('background-color', '#afa8b2');
       answ1 = "2";
     } else if (newLeftWidth >= 40 & newLeftWidth < 60) {
       $("#domanda-risposta1").html("Né d'accordo né in disaccordo");
-      $("#knob").css('background-color', 'white');
+      $(".knob").css('background-color', '#c5ab9d');
       answ1 = "3";
     } else if (newLeftWidth >= 60 & newLeftWidth < 80) {
       $("#domanda-risposta1").html("Sono abbastanza d'accordo");
-      $("#knob").css('background-color', 'black');
+      $(".knob").css('background-color', '#dfae7a');
       answ1 = "4";
     } else if (newLeftWidth >= 80 & newLeftWidth <= 100) {
       $("#domanda-risposta1").html("Sono molto d'accordo");
-      $("#knob").css('background-color', 'purple');
+      $(".knob").css('background-color', '#fab155');
       answ1 = "5";
     }
 
@@ -118,18 +118,23 @@ let answ4;
     newLeftWidth = Math.min(newLeftWidth, 100);
     if (newLeftWidth >= 0 & newLeftWidth < 20) {
       $("#domanda-risposta1").html("Molto in disaccordo");
+      $(".knob").css('background-color', '#80a2ff');
       answ1 = "1";
     } else if (newLeftWidth >= 20 & newLeftWidth < 40) {
       $("#domanda-risposta1").html("Abbastanza in disaccordo");
+      $(".knob").css('background-color', '#afa8b2');
       answ1 = "2";
     } else if (newLeftWidth >= 40 & newLeftWidth < 60) {
       $("#domanda-risposta1").html("Né d'accordo né in disaccordo");
+      $(".knob").css('background-color', '#c5ab9d');
       answ1 = "3";
     } else if (newLeftWidth >= 60 & newLeftWidth < 80) {
       $("#domanda-risposta1").html("Sono abbastanza d'accordo");
+      $(".knob").css('background-color', '#dfae7a');
       answ1 = "4";
     } else if (newLeftWidth >= 80 & newLeftWidth <= 100) {
       $("#domanda-risposta1").html("Sono molto d'accordo");
+      $(".knob").css('background-color', '#fab155');
       answ1 = "5";
     }
 
@@ -174,7 +179,7 @@ let answ4;
     ////// INIZIO DOMANDA 2 //////
     if (this.activeIndex === 1) {
       $(".avanti").removeClass("spariscibottone");
-
+      $(".knob").css('background-color', '#ffede6');
       console.log("IM ON second SLIDE!");
 
       const knob = document.getElementById("knob2");
@@ -205,15 +210,19 @@ let answ4;
 
         if (newLeftWidth >= 0 & newLeftWidth < 25) {
           $("#domanda-risposta2").html("Nessuna");
+          $(".knob").css('background-color', '#18c3b2');
           answ2 = "1";
         } else if (newLeftWidth >= 25 & newLeftWidth < 50) {
           $("#domanda-risposta2").html("Meno di 5");
+          $(".knob").css('background-color', '#65a69d');
           answ2 = "2";
         } else if (newLeftWidth >= 50 & newLeftWidth < 75) {
           $("#domanda-risposta2").html("Tra 5 e 10");
+          $(".knob").css('background-color', '#b18a88');
           answ2 = "3";
         } else if (newLeftWidth >= 70 & newLeftWidth <= 100) {
           $("#domanda-risposta2").html("Più di 10");
+          $(".knob").css('background-color', '#fd6e73');
           answ2 = "4";
         }
 
@@ -261,15 +270,19 @@ let answ4;
         newLeftWidth = Math.min(newLeftWidth, 100);
         if (newLeftWidth >= 0 & newLeftWidth < 25) {
           $("#domanda-risposta2").html("Nessuna");
+          $(".knob").css('background-color', '#18c3b2');
           answ2 = "1";
         } else if (newLeftWidth >= 25 & newLeftWidth < 50) {
           $("#domanda-risposta2").html("Meno di 5");
+          $(".knob").css('background-color', '#65a69d');
           answ2 = "2";
         } else if (newLeftWidth >= 50 & newLeftWidth < 75) {
           $("#domanda-risposta2").html("Tra 5 e 10");
+          $(".knob").css('background-color', '#b18a88');
           answ2 = "3";
         } else if (newLeftWidth >= 70 & newLeftWidth <= 100) {
           $("#domanda-risposta2").html("Più di 10");
+          $(".knob").css('background-color', '#fd6e73');
           answ2 = "4";
         }
 
@@ -300,6 +313,7 @@ let answ4;
     ////// INIZIO DOMANDA 3 //////
     else if (this.activeIndex === 2) {
       $(".avanti").removeClass("spariscibottone");
+      $(".knob").css('background-color', '#ffede6');
       console.log("IM ON third SLIDE!");
 
       const knob = document.getElementById("knob3");
@@ -330,12 +344,15 @@ let answ4;
 
         if (newLeftWidth >= 0 & newLeftWidth < 33) {
           $("#domanda-risposta3").html("No");
+          $(".knob").css('background-color', '#dffafb');
           answ3 = "1";
         } else if (newLeftWidth >= 33 & newLeftWidth < 66) {
           $("#domanda-risposta3").html("Non so");
+          $(".knob").css('background-color', '#84969e');
           answ3 = "2";
         } else if (newLeftWidth >= 66 & newLeftWidth <= 100) {
           $("#domanda-risposta3").html("Si");
+          $(".knob").css('background-color', '#293241');
           answ3 = "3";
         }
 
@@ -383,12 +400,15 @@ let answ4;
         newLeftWidth = Math.min(newLeftWidth, 100);
         if (newLeftWidth >= 0 & newLeftWidth < 33) {
           $("#domanda-risposta3").html("No");
+          $(".knob").css('background-color', '#dffafb');
           answ3 = "1";
         } else if (newLeftWidth >= 33 & newLeftWidth < 66) {
           $("#domanda-risposta3").html("Non so");
+          $(".knob").css('background-color', '#84969e');
           answ3 = "2";
         } else if (newLeftWidth >= 66 & newLeftWidth <= 100) {
           $("#domanda-risposta3").html("Si");
+          $(".knob").css('background-color', '#293241');
           answ3 = "3";
         }
 
@@ -420,6 +440,7 @@ let answ4;
     else if (this.activeIndex === 3) {
       console.log("IM ON fourth SLIDE!");
       $(".avanti").addClass("spariscibottone");
+      $(".knob").css('background-color', '#ffede6');
 
       const knob = document.getElementById("knob4");
       const leftSide = knob.previousElementSibling;
@@ -564,7 +585,7 @@ let answ4;
     params.append("answ4", answ4);
 
     // go!
-    var url = "risposta.html?" + params.toString();
+    var url = "risposta.html" + params.toString();
     location.href = url;
     // window.open(url);
 
