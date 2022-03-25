@@ -95,7 +95,7 @@ body {
 .interaction {
   position: absolute;
   display: block;
-  /* bottom: 160px; */
+  bottom: 160px;
   width: 120vw;
   left: -10vw;
   display: flex;
