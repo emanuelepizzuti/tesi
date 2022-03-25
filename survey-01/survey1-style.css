@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   background-color: var(--bg-orange);
 }
 
@@ -43,7 +43,6 @@ body {
 .spacer-header {
   height: 67px;
   width: 100%;
-  /* outline: 2pt solid; */
 }
 
 .swiper {
@@ -54,6 +53,10 @@ body {
   a larger black area will display for a device that has a positive value for this variable. */
   /* position: sticky; */
   /* bottom: 0; */
+  outline: 2px solid black;
+  outline-offset: -2px;
+  position: relative;
+  display: block;
 }
 
 .swiper-slide {
@@ -63,7 +66,8 @@ body {
 }
 
 .question-container {
-  position: relative;
+  position: absolute;
+  display: block;
   width: 100vw;
   padding: 0 20px 0 20px;
   display: flex;
@@ -91,7 +95,6 @@ body {
 .interaction {
   position: absolute;
   display: block;
-  bottom: 0px;
   /* bottom: 160px; */
   width: 120vw;
   left: -10vw;
