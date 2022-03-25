@@ -166,7 +166,7 @@ body {
   border-radius: 999px;
   /* Colors */
   background-color: var(--bg-orange);
-  border: 1px solid var(--orange);
+  outline: 1px solid var(--orange);
   cursor: pointer;
 }
 
