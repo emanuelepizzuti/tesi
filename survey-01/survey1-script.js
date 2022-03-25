@@ -3,13 +3,12 @@ let answ2;
 let answ3;
 let answ4;
 
-// Carica html quando tutta la pagina è caricata
-$(() => {
-  function go() {}
+$(function(){
+  $(".bottom-navigation").addClass("posiziona");
+});
 
-  $("#menuToggle input").click(function() {
-    $("body").toggleClass("fixed-position");
-  });
+// Carica html quando tutta la pagina è caricata
+// $(() => {
 
   ////// INIZIO DOMANDA 1 //////
   // Query the element
@@ -571,4 +570,4 @@ $(() => {
 
   });
 
-});
+// });
