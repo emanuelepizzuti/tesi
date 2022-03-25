@@ -18,17 +18,10 @@
   --green: #226204;
   --green-transp: rgba(34, 98,  4, 0.15);
   --green-transp-active: rgba(34, 98,  4, 0.30);
-  /* --swiper-navigation-size: 0px !important; */
 }
-
 * {
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
-  /* scroll-snap-type: y mandatory; */
-  /* overflow: hidden; */
 }
 
 body {
@@ -39,35 +32,34 @@ body {
 #header {
   background-color: var(--bg-orange) !important;
 }
-
 .spacer-header {
   height: 67px;
   width: 100%;
+  background-color: aquamarine;
+  position: relative;
+  top: 0;
 }
 
 .swiper {
   width: 100%;
   height: 100vh;
-  /* padding: 1em 1em calc(1em + env(safe-area-inset-bottom)); */
-  /* adds the safe-area-inset-bottom value to the initial 1em of padding.
-  a larger black area will display for a device that has a positive value for this variable. */
-  /* position: sticky; */
-  /* bottom: 0; */
   outline: 2px solid black;
-  outline-offset: -2px;
+  outline-offset: -70px;
+
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .swiper-slide {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .question-container {
-  position: absolute;
-  display: block;
   width: 100vw;
   padding: 0 20px 0 20px;
   display: flex;
@@ -93,15 +85,14 @@ body {
 }
 
 .interaction {
-  position: absolute;
-  display: block;
-  bottom: 160px;
+  /* position: absolute; */
+  /* display: block; */
+  /* bottom: 160px; */
   width: 120vw;
   left: -10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 2px solid red;
 }
 
 #domanda-risposta1 {
@@ -156,7 +147,7 @@ body {
   display: flex;
   align-items: center;
   /* Size */
-  height: 2px;
+  /* height: 2px; */
 }
 
 .left {
@@ -190,21 +181,13 @@ body {
 .bottom-navigation {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   height: 40px;
   width: 100vw;
-}
 
-.posiziona {
-  display: block;
-  outline: 2px solid blue;
+  border: 1px solid var(--orange);
 
-  padding: 1em 1em calc(1em + env(safe-area-inset-bottom));
-  /* adds the safe-area-inset-bottom value to the initial 1em of padding.
-  a larger black area will display for a device that has a positive value for this variable. */
-  position: sticky;
-  bottom: 0;
 }
 
 .noncliccabile {
@@ -224,67 +207,10 @@ body {
   border-right: 0;
   border-radius: 25px 0 0 25px;
   right: 0 !important;
+
+  bottom: 0 !important;
 }
 
 .swiper-button-next::after {
   content: '' !important;
-}
-
-.swiper-button-prev {
-  width: 100px !important;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--orange) !important;
-  background-color: var(--bg-orange);
-  border: 0;
-  border-radius: 25px;
-  left: 0 !important;
-}
-
-.swiper-button-prev::after {
-  content: '' !important;
-}
-
-/* .avanti:hover {
-  cursor: pointer;
-  background-color: var(--orange-transp-active);
-}
-
-.avanti:active {
-  cursor: pointer;
-  background-color: var(--orange-transp-active);
-} */
-/* .indietro:hover {
-  cursor: pointer;
-  color: var(--orange-transp-active);
-}
-
-.indietro:active {
-  cursor: pointer;
-  color: var(--orange-transp-active);
-} */
-
-.bottonefinalone {
-  width: 200px !important;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  right: 0 !important;
-  height: 40px;
-  bottom: 40px;
-  position: fixed;
-  background-color: var(--orange);
-  color: var(--bg);
-  border-radius: 25px 0 0 25px;
-  z-index: 99999;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.spariscibottone {
-  opacity: 0 !important;
-  pointer-events: none;
 }

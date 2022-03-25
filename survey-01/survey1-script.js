@@ -3,9 +3,9 @@ let answ2;
 let answ3;
 let answ4;
 
-$(function(){
-  $(".bottom-navigation").addClass("posiziona");
-});
+// $(function(){
+//   $(".bottom-navigation").addClass("posiziona");
+// });
 
 // Carica html quando tutta la pagina è caricata
 // $(() => {
