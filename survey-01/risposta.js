@@ -42,7 +42,6 @@ window.onload = function get() {
   } else if (answ4 === "2" || answ4 === "3" || answ4 === "4") {
     $("#risposta-quattro").html("...infine, sopravvaluti la portata del fenomeno. Ma alcune persone sbagliano più di te!");
   }
-
 }
 
 var swiper = new Swiper(".mySwiper", {
@@ -52,28 +51,14 @@ var swiper = new Swiper(".mySwiper", {
   mousewheel: true,
   navigation: {
     nextEl: ".swiper-button-next"
-    // prevEl: ".swiper-button-prev"
   }
 });
 
-// per lo scroll nell'ultima parte
-var startScroll, touchStart, touchCurrent;
-swiper.slides.on('touchstart', function(e) {
-  startScroll = this.scrollTop;
-  touchStart = e.targetTouches[0].pageY;
-}, true);
-swiper.slides.on('touchmove', function(e) {
-  touchCurrent = e.targetTouches[0].pageY;
-  var touchesDiff = touchCurrent - touchStart;
-  var slide = this;
-  var onlyScrolling =
-    (slide.scrollHeight > slide.offsetHeight) &&
-    (
-      (touchesDiff < 0 && startScroll === 0) ||
-      (touchesDiff > 0 && startScroll === (slide.scrollHeight - slide.offsetHeight)) ||
-      (startScroll > 0 && startScroll < (slide.scrollHeight - slide.offsetHeight))
-    );
-  if (onlyScrolling) {
-    e.stopPropagation();
+swiper.on('slideChange', function() {
+  if (this.activeIndex === 4) {
+    console.log("IM ON fourth SLIDE!");
+    $(".avanti").addClass("spariscibottone");
+  } else {
+    $(".avanti").removeClass("spariscibottone");
   }
-}, true);
+})

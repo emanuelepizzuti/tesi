@@ -64,7 +64,8 @@ let answ4;
       answ1 = "4";
     } else if (newLeftWidth >= 80 & newLeftWidth <= 100) {
       $("#domanda-risposta1").html("Sono molto d'accordo");
-      $(".knob").css('background-color', '#fab155');
+      $(".knob").css('background', 'radial-gradient(50% 50% at 50% 50%, #F9B156 0%, rgba(249, 177, 86, 0) 100%)');
+
       answ1 = "5";
     }
 
@@ -118,23 +119,24 @@ let answ4;
     newLeftWidth = Math.min(newLeftWidth, 100);
     if (newLeftWidth >= 0 & newLeftWidth < 20) {
       $("#domanda-risposta1").html("Molto in disaccordo");
-      $(".knob").css('background-color', '#80a2ff');
+      $(".knob").css('background', 'radial-gradient(50% 50% at 50% 50%, #82A2FB 0%, rgba(130, 162, 251, 0) 100%)');
       answ1 = "1";
     } else if (newLeftWidth >= 20 & newLeftWidth < 40) {
       $("#domanda-risposta1").html("Abbastanza in disaccordo");
-      $(".knob").css('background-color', '#afa8b2');
+      $(".knob").css('background', 'radial-gradient(50% 50% at 50% 50%, #AEA8BE 0%, rgba(174, 168, 190, 0) 100%)');
       answ1 = "2";
     } else if (newLeftWidth >= 40 & newLeftWidth < 60) {
       $("#domanda-risposta1").html("Né d'accordo né in disaccordo");
-      $(".knob").css('background-color', '#c5ab9d');
+      $(".knob").css('background', 'radial-gradient(50% 50% at 50% 50%, #C7AB9B 0%, rgba(199, 171, 155, 0) 100%)');
       answ1 = "3";
     } else if (newLeftWidth >= 60 & newLeftWidth < 80) {
       $("#domanda-risposta1").html("Sono abbastanza d'accordo");
-      $(".knob").css('background-color', '#dfae7a');
+      $(".knob").css('background', 'radial-gradient(50% 50% at 50% 50%, #DEAE7B 0%, rgba(222, 174, 123, 0) 100%)');
       answ1 = "4";
     } else if (newLeftWidth >= 80 & newLeftWidth <= 100) {
       $("#domanda-risposta1").html("Sono molto d'accordo");
-      $(".knob").css('background-color', '#fab155');
+      $(".knob").css('background', 'radial-gradient(50% 50% at 50% 50%, #F9B156 0%, rgba(249, 177, 86, 0) 100%)');
+
       answ1 = "5";
     }
 
@@ -169,7 +171,6 @@ let answ4;
     noSwipingClass: "swiper-slide",
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
     }
   });
 
@@ -179,7 +180,7 @@ let answ4;
     ////// INIZIO DOMANDA 2 //////
     if (this.activeIndex === 1) {
       $(".avanti").removeClass("spariscibottone");
-      $(".knob").css('background-color', '#ffede6');
+      $(".knob").css('background', '#ffede6');
       console.log("IM ON second SLIDE!");
 
       const knob = document.getElementById("knob2");
