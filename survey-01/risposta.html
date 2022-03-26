@@ -8,69 +8,81 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="risposta.css" />
-  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="../header.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <header id="header">
-		<svg class="logo" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" href="index.html">
-			<circle cx="13" cy="13" r="13" fill="url(#paint0_linear_619_1288)" />
-			<defs>
-				<linearGradient id="paint0_linear_619_1288" x1="13" y1="0" x2="13" y2="26" gradientUnits="userSpaceOnUse">
-					<stop stop-opacity="0" />
-					<stop offset="1" />
-				</linearGradient>
-			</defs>
-		</svg>
-		<nav role='navigation'>
-			<div id="menuToggle">
-				<input type="checkbox" />
-				<span></span>
-				<span></span>
-				<span></span>
-				<ul id="menu">
-					<a href="index.html">
-						<li>Home</li>
-					</a>
-					<a href="cards/cards.html">
-						<li>Survey</li>
-					</a>
-					<a href="https://github.com/emanuelepizzuti/unwrapthebubble">
-						<li>GitHub</li>
-					</a>
-				</ul>
-			</div>
-		</nav>
-	</header>
+    <svg class="logo" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" href="index.html">
+      <circle cx="13" cy="13" r="13" fill="url(#paint0_linear_619_1288)" />
+      <defs>
+        <linearGradient id="paint0_linear_619_1288" x1="13" y1="0" x2="13" y2="26" gradientUnits="userSpaceOnUse">
+          <stop stop-opacity="0" />
+          <stop offset="1" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <nav role='navigation'>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="cards/cards.html">
+            <li>Survey</li>
+          </a>
+          <a href="https://github.com/emanuelepizzuti/unwrapthebubble">
+            <li>GitHub</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
   <!-- Swiper -->
   <div class="swiper mySwiper">
+
     <div class="swiper-wrapper">
+
       <div class="swiper-slide">
-        <img class="risp" src="img/risp0.png" alt="">
+        <div class="spacer-header"></div>
+        <p class="numero">Il tuo risultato</p>
+        <img class="risp" src="../img/risp0.png" alt="">
         <p id="risposta-zero" class="testo-risp">Questa è la tua bolla.<br>In base alle tue risposte abbiamo capito che...</p>
       </div>
       <div class="swiper-slide">
-        <img class="risp" src="img/risp1.png" alt="">
+        <div class="spacer-header"></div>
+        <p class="numero">Il tuo risultato</p>
+        <img class="risp" src="../img/risp0.png" alt="">
         <p id="risposta-uno" class="testo-risp">testo</p>
       </div>
       <div class="swiper-slide">
-        <img class="risp" src="img/risp2.png" alt="">
-        <p id="risposta-due" class="testo-risp">test0</p>
+        <div class="spacer-header"></div>
+        <p class="numero">Il tuo risultato</p>
+        <img class="risp" src="../img/risp0.png" alt="">
+        <p id="risposta-due" class="testo-risp">testo</p>
       </div>
       <div class="swiper-slide">
-        <img class="risp" src="img/risp3.png" alt="">
+        <div class="spacer-header"></div>
+        <p class="numero">Il tuo risultato</p>
+        <img class="risp" src="../img/risp0.png" alt="">
         <p id="risposta-tre" class="testo-risp">testo</p>
       </div>
-      <div class="swiper-slide">
-        <img class="risp" src="img/risp4.png" alt="">
-        <p class="testo-risp">testo</p>
-      </div>
     </div>
+
+    <div class="bottom-navigation">
+      <button class="avanti swiper-button-next">Avanti</button>
+    </div>
+
   </div>
 
   <!-- Swiper JS -->

@@ -585,7 +585,7 @@ let answ4;
     params.append("answ4", answ4);
 
     // go!
-    var url = "risposta.html" + params.toString();
+    var url = "risposta.html?" + params.toString();
     location.href = url;
     // window.open(url);
 

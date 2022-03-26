@@ -50,6 +50,10 @@ var swiper = new Swiper(".mySwiper", {
   effect: "fade",
   direction: "vertical",
   mousewheel: true,
+  navigation: {
+    nextEl: ".swiper-button-next"
+    // prevEl: ".swiper-button-prev"
+  }
 });
 
 // per lo scroll nell'ultima parte
