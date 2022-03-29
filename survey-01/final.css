@@ -135,7 +135,7 @@ img {
 .altrotema {
   width: 236px;
   height: 50px;
-  margin: 40px 20px 100px 20px;
+  margin: 40px 20px 40px 20px;
   background: var(--orange-transp);
   border: 1px solid var(--orange);
   display: flex;
