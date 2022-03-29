@@ -8,16 +8,16 @@
   --bg: #F4F6F0;
   --bg-orange: #FFEDE6;
   --orange: #EB4E1C;
-  --orange-transp: rgba(255, 97,  34, 0.15);
+  --orange-transp: rgba(255, 97, 34, 0.15);
   --orange-transp-active: rgba(255, 97, 34, 0.30);
   --bg-purple: #F5ECFF;
   --purple: #6F32B0;
-  --purple-transp: rgba(111, 50,  176, 0.15);
-  --purple-transp-active: rgba(111, 50,  176, 0.30);
+  --purple-transp: rgba(111, 50, 176, 0.15);
+  --purple-transp-active: rgba(111, 50, 176, 0.30);
   --bg-green: #D7F4E5;
   --green: #226204;
-  --green-transp: rgba(34, 98,  4, 0.15);
-  --green-transp-active: rgba(34, 98,  4, 0.30);
+  --green-transp: rgba(34, 98, 4, 0.15);
+  --green-transp-active: rgba(34, 98, 4, 0.30);
   /* --swiper-navigation-size: 0px !important; */
 }
 
@@ -56,6 +56,10 @@ body {
   margin-bottom: 20px;
 }
 
+.paragraph-bold {
+  font-weight: 700;
+}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -64,17 +68,11 @@ body {
   width: 100%;
   scroll-snap-align: start;
   position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-  padding:
+  <<<<<<< HEAD <<<<<<< HEAD=======padding:
     env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
->>>>>>> parent of a33a45b (qwerty)
-=======
-  padding:
+  >>>>>>>parent of a33a45b (qwerty)=======padding:
     env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
->>>>>>> parent of a33a45b (qwerty)
+  >>>>>>>parent of a33a45b (qwerty)
 }
 
 footer {
@@ -118,7 +116,7 @@ footer {
 }
 
 .start:active {
-  background-color: #blue;
+  background-color: #e2e6dc;
 }
 
 .start:hover {
