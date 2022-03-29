@@ -79,6 +79,15 @@ body {
 .question {
   font-family: 'Noto Serif', serif;
   font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 140%;
+  max-width: 90vw;
+  max-height: 350px;
+}
+
+.question-p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
   line-height: 140%;
   max-width: 90vw;
   max-height: 350px;
