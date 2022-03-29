@@ -85,6 +85,10 @@ body {
   /* outline: 2px solid; */
 }
 
+.testo-risp-bold {
+  font-weight: 700;
+}
+
 .bottom-navigation {
   /* outline: solid 1px cadetblue; */
   position: relative;
@@ -128,7 +132,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px !important;
+  width: 200px !important;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -139,4 +143,8 @@ button {
   color: var(--bg);
   border-radius: 25px;
   margin: auto;
+}
+
+.finalbutton:hover {
+  text-decoration: none;
 }

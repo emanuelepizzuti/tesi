@@ -3,13 +3,6 @@ let answ2;
 let answ3;
 let answ4;
 
-// $(function(){
-//   $(".bottom-navigation").addClass("posiziona");
-// });
-
-// Carica html quando tutta la pagina è caricata
-// $(() => {
-
 ////// INIZIO DOMANDA 1 //////
 // Query the element
 const knob = document.getElementById("knob");
@@ -65,7 +58,6 @@ const mouseMoveHandler = function(e) {
   } else if (newLeftWidth >= 80 & newLeftWidth <= 100) {
     $("#domanda-risposta1").html("Sono molto d'accordo");
     $(".knob").css('background', 'radial-gradient(50% 50% at 50% 50%, #F9B156 0%, rgba(249, 177, 86, 0) 100%)');
-
     answ1 = "5";
   }
 
@@ -136,7 +128,6 @@ const touchMoveHandler = function(e) {
   } else if (newLeftWidth >= 80 & newLeftWidth <= 100) {
     $("#domanda-risposta1").html("Sono molto d'accordo");
     $(".knob").css('background', 'radial-gradient(50% 50% at 50% 50%, #F9B156 0%, rgba(249, 177, 86, 0) 100%)');
-
     answ1 = "5";
   }
 
@@ -171,6 +162,7 @@ var swiper = new Swiper(".mySwiper", {
   noSwipingClass: "swiper-slide",
   navigation: {
     nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   }
 });
 
@@ -581,9 +573,6 @@ swiper.on('slideChange', function() {
   ////// FINE DOMANDA 4 //////
 
 });
-// function go() {
-//   console.log("PORCODDDDDD");
-// }
 
 $(".bottonefinalone").click(function() {
   console.log("answ1: " + answ1 + ", answ2: " + answ2 + ", answ3: " + answ3 + ", answ4: " + answ4);
@@ -599,7 +588,4 @@ $(".bottonefinalone").click(function() {
   var url = "risposta.html?" + params.toString();
   location.href = url;
   // window.open(url);
-
 });
-
-// });

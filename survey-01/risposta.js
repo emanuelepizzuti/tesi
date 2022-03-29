@@ -16,9 +16,9 @@ window.onload = function get() {
   if (answ1 === "1" || answ1 === "2") {
     $("#risposta-uno").html("...non vedi il fenomeno dell’immigrazione come un problema...");
   } else if (answ1 === "3") {
-    $("#risposta-uno").html("...non hai una posizione rispetto al fenomeno...");
+    $("#risposta-uno").html("...non hai una vera posizione rispetto al fenomeno...");
   } else if (answ1 === "4" || answ1 === "5") {
-    $("#risposta-uno").html("...vedi il fenomeno dell’immigrazione come un problema\...");
+    $("#risposta-uno").html("...vedi il fenomeno dell’immigrazione come un problema...");
   }
 
   if (answ2 === "1") {
@@ -34,13 +34,13 @@ window.onload = function get() {
   if (answ3 === "1" || answ3 === "2") {
     $("#risposta-tre").html("...forse dovresti fare più attenzione a ciò che leggi...");
   } else if (answ3 === "3") {
-    $("#risposta-tre").html("...sei attento rispetto a ciò che leggi...");
+    $("#risposta-tre").html("...sei attentə rispetto a ciò che leggi...");
   }
 
   if (answ4 === "1") {
-    $("#risposta-quattro").html("...infine, conosci la portata del fenomeno. Ma molte persone sbagliano, perché?");
+    $("#risposta-quattro").html("...infine, conosci la portata del fenomeno. Ma molte persone ne hanno una percezione distorta, perché?");
   } else if (answ4 === "2" || answ4 === "3" || answ4 === "4") {
-    $("#risposta-quattro").html("...infine, sopravvaluti la portata del fenomeno. Ma alcune persone sbagliano più di te!");
+    $("#risposta-quattro").html("...infine, sopravvaluti la portata del fenomeno. Ma alcune persone lo fanno più di te! Perché?");
   }
 }
 

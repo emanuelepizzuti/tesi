@@ -149,3 +149,8 @@ img {
   letter-spacing: -0.9830446243286133px;
   color: var(--orange);
 }
+
+.altrotema:hover {
+  background: var(--orange-transp-active);
+  text-decoration: none;
+}
